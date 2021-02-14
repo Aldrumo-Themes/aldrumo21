@@ -1,0 +1,29 @@
+{
+    "name": "aldrumo-themes/aldrumo21",
+    "description": "Aldrumo21 - The default theme for Aldrumo",
+    "type": "aldrumo-theme",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mike Barlow",
+            "email": "mike@mikebarlow.co.uk"
+        }
+    ],
+    "require": {
+        "php": "^7.3",
+        "aldrumo/theme-manager": "^0.1",
+        "owenvoke/blade-fontawesome": "^1.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "AldrumoThemes\\Aldrumo21\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AldrumoThemes\\Aldrumo21\\Aldrumo21ServiceProvider"
+            ]
+        }
+    }
+}
