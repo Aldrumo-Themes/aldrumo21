@@ -17,7 +17,9 @@ mix.setPublicPath('./')
     require('tailwindcss'),
     require('autoprefixer'),
 ])
-.js('resources/js/site.js', 'resources/dist/js');
+.js('resources/js/site.js', 'resources/dist/js')
+.copyDirectory('resources/img', 'resources/dist/img')
+.copyDirectory('resources/meta', 'resources/dist/meta');
 
 if (mix.inProduction()) {
     mix.version();
